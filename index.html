@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop É o Bicho | Banho, Tosa e Clínica Veterinária na Tijuca</title>
+    <meta name="description" content="O Petshop É o Bicho na Tijuca oferece os melhores serviços de Banho e Tosa, Clínica Veterinária, medicamentos, rações e acessórios para o seu pet.">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="Petshop É o Bicho - Cuidando do seu pet com amor">
+    <meta property="og:description" content="Especialistas em Banho e Tosa, medicamentos, acessórios e rações. Venha nos visitar na Tijuca!">
+    <meta property="og:image" content="https://dhaconsultoria.com.br/hotsites/petshop-e-o-bicho/img/logo.png">
+    <meta property="og:url" content="https://dhaconsultoria.com.br/hotsites/petshop-e-o-bicho">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            light: '#b1de6a', /* Fundo verde limão do logo */
+                            dark: '#2c6b61',  /* Verde escuro dos textos */
+                            accent: '#dc2626', /* Vermelho do coração */
+                            orange: '#ea580c'  /* Laranja do gato */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3">
+                <img src="img/logo.png" alt="Logomarca Petshop É o Bicho" class="h-16 object-contain">
+                <span class="font-heading font-bold text-2xl text-brand-dark hidden sm:block">É o Bicho!</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 font-semibold text-brand-dark">
+                <a href="#sobre" class="hover:text-brand-orange transition">Sobre Nós</a>
+                <a href="#servicos" class="hover:text-brand-orange transition">Serviços</a>
+                <a href="#depoimentos" class="hover:text-brand-orange transition">Depoimentos</a>
+                <a href="#contato" class="hover:text-brand-orange transition">Contato</a>
+            </nav>
+            <a href="https://wa.me/5521996148396" target="_blank" class="bg-brand-dark hover:bg-teal-800 text-white px-5 py-2.5 rounded-full font-bold transition shadow-lg flex items-center gap-2">
+                <i class="fab fa-whatsapp text-lg"></i> Agendar
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-brand-light py-20 lg:py-32 overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <h1 class="text-4xl lg:text-6xl font-heading font-extrabold text-brand-dark leading-tight mb-6">
+                    O Cuidado que o seu Melhor Amigo <span class="text-brand-accent">Merece!</span>
+                </h1>
+                <p class="text-lg text-teal-900 mb-8 font-medium">
+                    Veterinária, Banho & Tosa, Medicamentos, Acessórios e Rações na Tijuca. Tudo num só lugar com muito carinho para o seu pet.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="https://wa.me/5521996148396" target="_blank" class="bg-brand-orange hover:bg-orange-700 text-white text-lg px-8 py-3 rounded-full font-bold transition shadow-lg flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-xl"></i> Fale no WhatsApp
+                    </a>
+                    <a href="#servicos" class="bg-white text-brand-dark hover:bg-gray-100 text-lg px-8 py-3 rounded-full font-bold transition shadow border border-brand-dark text-center">
+                        Nossos Serviços
+                    </a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 mt-12 lg:mt-0 flex justify-center">
+                <img src="img/logo.png" alt="Mascotes É o Bicho" class="w-full max-w-md drop-shadow-2xl animate-bounce-slow">
+            </div>
+        </div>
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] pointer-events-none"></div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 rounded-2xl overflow-hidden shadow-2xl relative">
+                <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cachorro feliz no petshop" class="w-full h-auto object-cover">
+                <div class="absolute bottom-0 left-0 right-0 bg-brand-dark bg-opacity-90 text-white p-4 text-center">
+                    <p class="font-heading font-bold text-xl">Amor e Dedicação todos os dias!</p>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-brand-orange font-bold text-lg uppercase tracking-wider mb-2">Quem Somos</h2>
+                <h3 class="text-3xl lg:text-4xl font-heading font-bold text-brand-dark mb-6">Tradição e Carinho para o seu Pet</h3>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                    O <strong>Petshop É o Bicho</strong> nasceu do amor incondicional pelos animais. Somos mais do que uma loja, somos um centro completo de cuidados focado no bem-estar e na saúde do seu melhor amigo.
+                </p>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Localizados na Tijuca, oferecemos uma estrutura preparada para receber cães e gatos com toda a segurança. Nossa equipe é treinada, atenciosa e apaixonada pelo que faz!
+                </p>
+                <ul class="space-y-3 font-medium text-brand-dark">
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-brand-light text-xl"></i> Profissionais Qualificados</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-brand-light text-xl"></i> Ambiente Limpo e Seguro</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-brand-light text-xl"></i> Ampla variedade de produtos</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-brand-orange font-bold text-lg uppercase tracking-wider mb-2">O que fazemos</h2>
+                <h3 class="text-3xl lg:text-4xl font-heading font-bold text-brand-dark">Nossos Serviços e Produtos</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition text-center group border-b-4 border-transparent hover:border-brand-light">
+                    <div class="w-20 h-20 bg-brand-light bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-bath text-3xl text-brand-dark"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Banho & Tosa</h4>
+                    <p class="text-gray-600 text-sm">Estética animal com produtos premium e profissionais cuidadosos. Tosa na tesoura e na máquina.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition text-center group border-b-4 border-transparent hover:border-brand-accent">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-stethoscope text-3xl text-brand-accent"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Veterinária & Vacinas</h4>
+                    <p class="text-gray-600 text-sm">Atendimento clínico e vacinação completa (Cinomose, Leptospirose, etc) para proteger seu melhor amigo.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition text-center group border-b-4 border-transparent hover:border-brand-orange">
+                    <div class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-bone text-3xl text-brand-orange"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Rações</h4>
+                    <p class="text-gray-600 text-sm">As melhores marcas do mercado (Super Premium, Premium e Standard) para a nutrição ideal.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition text-center group border-b-4 border-transparent hover:border-brand-dark">
+                    <div class="w-20 h-20 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-shopping-bag text-3xl text-brand-dark"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Acessórios & Conforto</h4>
+                    <p class="text-gray-600 text-sm">Farmácia veterinária, promoções de tapetes higiênicos e uma loja 100% climatizada te esperando!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="py-20 bg-brand-dark text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-brand-light font-bold text-lg uppercase tracking-wider mb-2">Avaliações do Google</h2>
+                <h3 class="text-3xl lg:text-4xl font-heading font-bold">O que dizem nossos clientes</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-teal-800 rounded-xl p-6 shadow-lg relative">
+                    <div class="text-yellow-400 text-lg mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-teal-100 italic mb-6">"Pet Shop com variedade de produtos, bons preços e profissionais agradáveis. Adoro o tratamento, a recepção e o acolhimento."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center font-bold text-xl">C</div>
+                        <div>
+                            <h5 class="font-bold">Cliente Satisfeito</h5>
+                            <span class="text-sm text-teal-300">Avaliação do Google</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="bg-teal-800 rounded-xl p-6 shadow-lg relative">
+                    <div class="text-yellow-400 text-lg mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-teal-100 italic mb-6">"Ótimo! Encontro tudo que meu pet precisa: de rações como N&D e Vet Life até medicamentos. Muito carinho e dedicação no atendimento."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center font-bold text-xl">L</div>
+                        <div>
+                            <h5 class="font-bold">Local Guide</h5>
+                            <span class="text-sm text-teal-300">Avaliação do Google</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="bg-teal-800 rounded-xl p-6 shadow-lg relative">
+                    <div class="text-yellow-400 text-lg mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-teal-100 italic mb-6">"Atendimento muito bom. Ambiente super limpo e excelente serviço de banho e tosa. Recomendo para todos na região da Tijuca!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center font-bold text-xl">A</div>
+                        <div>
+                            <h5 class="font-bold">Avaliação Verificada</h5>
+                            <span class="text-sm text-teal-300">Google Maps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato e Mapa -->
+    <section id="contato" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-gray-50 rounded-3xl overflow-hidden shadow-xl border border-gray-100">
+                <div class="p-8 lg:p-12 flex flex-col justify-center">
+                    <h2 class="text-brand-orange font-bold text-lg uppercase tracking-wider mb-2">Venha nos Visitar</h2>
+                    <h3 class="text-3xl font-heading font-bold text-brand-dark mb-8">Informações de Contato</h3>
+                    
+                    <div class="space-y-6 text-lg">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-light bg-opacity-30 text-brand-dark rounded-full flex items-center justify-center shrink-0">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Endereço</h4>
+                                <p class="text-gray-600">R. Campos Sales, 137 - Lj - A<br>Tijuca, Rio de Janeiro - RJ</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-light bg-opacity-30 text-brand-dark rounded-full flex items-center justify-center shrink-0">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">WhatsApp</h4>
+                                <a href="https://wa.me/5521996148396" target="_blank" class="text-brand-dark hover:text-brand-orange transition">(21) 99614-8396</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-light bg-opacity-30 text-brand-dark rounded-full flex items-center justify-center shrink-0">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Telefone Fixo</h4>
+                                <p class="text-gray-600">(21) 2568-0054</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-light bg-opacity-30 text-brand-dark rounded-full flex items-center justify-center shrink-0">
+                                <i class="fas fa-hashtag text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Redes Sociais</h4>
+                                <div class="flex gap-4 mt-2 text-2xl">
+                                    <a href="https://www.instagram.com/petshopeobichotijuca/" target="_blank" class="text-gray-400 hover:text-pink-600 transition"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://web.facebook.com/petshopeobichotijuca/?locale=pt_BR&_rdc=1&_rdr" target="_blank" class="text-gray-400 hover:text-blue-600 transition"><i class="fab fa-facebook"></i></a>
+                                </div>
+                                <p class="text-sm text-gray-500 mt-2">Siga a hashtag <a href="https://www.instagram.com/explore/tags/eobichotijuca/" target="_blank" class="text-brand-orange hover:underline">#eobichotijuca</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-96 lg:h-auto min-h-[400px]">
+                    <!-- Embed Google Maps -->
+                    <iframe 
+                        src="https://maps.google.com/maps?q=R.%20Campos%20Sales,%20137%20-%20Tijuca,%20Rio%20de%20Janeiro%20-%20RJ&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5521996148396" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 hover:scale-110 transition z-50 animate-bounce">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 border-t border-gray-800 mt-auto">
+        <div class="container mx-auto px-4 text-center flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Petshop É o Bicho. Todos os direitos reservados.</p>
+            <p class="text-sm">Desenvolvido por <a href="https://dhaconsultoria.com.br" target="_blank" class="text-white hover:text-brand-light font-bold transition">DHA Consultoria</a></p>
+        </div>
+    </footer>
+
+    <style>
+        .animate-bounce-slow {
+            animation: bounce-slow 3s infinite;
+        }
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(-5%); animation-timing-function: cubic-bezier(0.8, 0, 1, 1); }
+            50% { transform: translateY(0); animation-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+        }
+    </style>
+</body>
+</html>
