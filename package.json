@@ -1,0 +1,8 @@
+{
+  "name": "petshop-e-o-bicho",
+  "version": "1.0.0",
+  "description": "Website institucional Petshop É o Bicho",
+  "scripts": {
+    "dev": "npx http-server -p 8080 -c-1"
+  }
+}
